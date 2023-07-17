@@ -6,7 +6,7 @@ int main (int argc, char **argv)
 	
 	if (argc == 2)
 	{
-		while (argv[1][i] == 32 || argv[1][i] == 9)
+		while (argv[1][i] == 32 || (argv[1][i] >= 9 && argv[1][i] <= 13))
 			i++;
 		while ((argv[1][i] != 32 && argv[1][i] != 9) && argv[1][i])
 		{
